@@ -16,6 +16,7 @@ static void PrintAuthors()
     }
 }
 
+//Logic to populate database approach
 static void SeedingData()
 {
     using var context = new MyFavoriteBooksContext();

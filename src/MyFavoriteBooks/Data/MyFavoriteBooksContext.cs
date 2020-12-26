@@ -11,6 +11,7 @@ namespace MyFavoriteBooks.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Seed data model approach
             modelBuilder.Entity<Author>()
                 .HasData(new Author { Id = 1, FirstName = "Robert C.", LastName = "Martin" });
         }

@@ -4,6 +4,7 @@ namespace MyFavoriteBooks.Migrations
 {
     public partial class CustomMigration : Migration
     {
+        //Seed data editing migration directly approach
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.InsertData(
