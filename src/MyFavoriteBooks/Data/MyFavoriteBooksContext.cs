@@ -11,7 +11,8 @@ namespace MyFavoriteBooks.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
+            modelBuilder.Entity<Author>()
+                .HasData(new Author { Id = 1, FirstName = "Robert C.", LastName = "Martin" });
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
